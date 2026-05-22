@@ -6,8 +6,8 @@ export function SiteFooter() {
       <div className="container footer__inner">
         <div className="footer__col footer__brand">
           <img className="footer__brand-logo" src="/revampfy-logo.jpeg" alt="Revampfy" />
-          <p>Refurbished laptops, desktops, and accessories with warranty.</p>
-          <p className="footer__brand-unit">A unit of PCGS Enterprises</p>
+          <p>Certified refurbished laptops for smart businesses</p>
+          <p className="footer__brand-unit">A unit of Pagecreationz Global Services Pvt Ltd</p>
         </div>
         <div className="footer__col">
           <h4>Quick Links</h4>

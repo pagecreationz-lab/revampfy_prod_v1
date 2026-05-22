@@ -20,6 +20,7 @@ export function HeroImageSlider({ images, intervalMs = 3500 }: HeroImageSliderPr
 
   return (
     <div className="hero-slider" aria-label="Hero image slider">
+      <span className="hero-slider__badge">Refurbished</span>
       {images.map((image, imageIndex) => (
         <img
           key={image.src}
