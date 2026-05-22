@@ -71,7 +71,7 @@ export function Header() {
           <Link className="brand-block" href="/">
             <img className="brand-logo-img" src="/revampfy-logo.jpeg" alt="Revampfy" />
             <p className="brand-tagline">Certified refurbished laptops for smart businesses.</p>
-            <p className="brand-unit">A unit of PCGS Enterprises</p>
+            <p className="brand-unit">A unit of Pagecreationz Global Services Pvt Ltd</p>
           </Link>
         </div>
       </div>

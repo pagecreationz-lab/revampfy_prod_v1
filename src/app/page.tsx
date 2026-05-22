@@ -86,11 +86,14 @@ export default async function Home() {
             </div>
             <div className="sample-products-grid">
               <article className="sample-product-card">
-                <img
-                  src="/images/Asus Laptop -1.webp"
-                  alt="ASUS VivoBook refurbished laptop"
-                />
-                <h3>ASUS VivoBook 16</h3>
+                <div className="sample-product-card__media">
+                  <span className="sample-product-card__badge">Refurbished</span>
+                  <img
+                    src="/images/Apple MacBook Air M1.webp"
+                    alt="Apple MacBook Air M1"
+                  />
+                </div>
+                <h3>Apple MacBook Air M1</h3>
                 <p>16-inch productivity laptop with fast SSD, smooth multitasking, and all-day use.</p>
                 <div className="sample-product-card__bottom">
                   <span>Rs 66,000</span>
@@ -98,10 +101,13 @@ export default async function Home() {
                 </div>
               </article>
               <article className="sample-product-card">
-                <img
-                  src="/images/HP all in one pc.webp"
-                  alt="HP EliteDesk 800 G3"
-                />
+                <div className="sample-product-card__media">
+                  <span className="sample-product-card__badge">Refurbished</span>
+                  <img
+                    src="/images/HP all in one pc.webp"
+                    alt="HP EliteDesk 800 G3"
+                  />
+                </div>
                 <h3>HP All-in-One PC Intel Core i5</h3>
                 <p>Compact desktop built for office performance, multitasking, and daily workload.</p>
                 <div className="sample-product-card__bottom">
@@ -110,10 +116,13 @@ export default async function Home() {
                 </div>
               </article>
               <article className="sample-product-card">
-                <img
-                  src="/images/Lenovo thinkpad.webp"
-                  alt="Lenovo ThinkPad T480"
-                />
+                <div className="sample-product-card__media">
+                  <span className="sample-product-card__badge">Refurbished</span>
+                  <img
+                    src="/images/Lenovo thinkpad.webp"
+                    alt="Lenovo ThinkPad T480"
+                  />
+                </div>
                 <h3>Lenovo ThinkPad T14 Intel Core i7</h3>
                 <p>Durable productivity machine with strong keyboard, security features, and SSD.</p>
                 <div className="sample-product-card__bottom">
