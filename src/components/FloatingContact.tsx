@@ -1,20 +1,10 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
-
-type ContactMode = "whatsapp" | "phone";
 
 const PHONE_NUMBER = "+918248003564";
 const WHATSAPP_LINK =
   "https://wa.me/918248003564?text=Hi%20Revampfy%2C%20I%20need%20help%20with%20products.";
-
-function ChatIcon() {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M4 4.5A3.5 3.5 0 0 1 7.5 1h9A3.5 3.5 0 0 1 20 4.5v7A3.5 3.5 0 0 1 16.5 15H10l-4.1 3.4c-.77.64-1.9.08-1.9-.92V15A3.5 3.5 0 0 1 .5 11.5v-7A3.5 3.5 0 0 1 4 4.5ZM7 7.75a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H7Zm0 4a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2H7Z" />
-    </svg>
-  );
-}
 
 function WhatsAppIcon() {
   return (
@@ -33,10 +23,8 @@ function PhoneIcon() {
 }
 
 export function FloatingContact() {
-  const [mode, setMode] = useState<ContactMode | null>(null);
   const [isOpen, setIsOpen] = useState(false);
 
-  const activeMode = mode ?? "chat";
   const scrollToTop = () => {
     if (typeof window === "undefined") return;
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -60,10 +48,7 @@ export function FloatingContact() {
             target="_blank"
             rel="noreferrer"
             className="contact-float-menu__item"
-            onClick={() => {
-              setMode("whatsapp");
-              setIsOpen(false);
-            }}
+            onClick={() => setIsOpen(false)}
             role="menuitem"
           >
             <WhatsAppIcon />
@@ -72,10 +57,7 @@ export function FloatingContact() {
           <a
             href={`tel:${PHONE_NUMBER}`}
             className="contact-float-menu__item"
-            onClick={() => {
-              setMode("phone");
-              setIsOpen(false);
-            }}
+            onClick={() => setIsOpen(false)}
             role="menuitem"
           >
             <PhoneIcon />
@@ -87,24 +69,14 @@ export function FloatingContact() {
       <div className="contact-float-shell">
         <button
           type="button"
-          className={`contact-float contact-float--${activeMode}`}
+          className="contact-float contact-float--whatsapp"
           onClick={() => setIsOpen((prev) => !prev)}
           aria-label="Open contact options"
           aria-expanded={isOpen}
         >
-          {mode === "whatsapp" ? <WhatsAppIcon /> : mode === "phone" ? <PhoneIcon /> : <ChatIcon />}
-        </button>
-        <button
-          type="button"
-          className="contact-float__mode-toggle"
-          aria-hidden="true"
-          tabIndex={-1}
-          onClick={() => setIsOpen((prev) => !prev)}
-        >
-          {isOpen ? "X" : "Chat"}
+          <WhatsAppIcon />
         </button>
       </div>
     </div>
   );
 }
-

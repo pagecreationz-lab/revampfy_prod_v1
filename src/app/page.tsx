@@ -16,15 +16,15 @@ export default async function Home() {
 
   const heroSliderImages = [
     {
-      src: "/images/Lenovo laptop-1.webp",
+      src: "/images/lenovo-laptop-1.webp",
       alt: "Lenovo refurbished laptop",
     },
     {
-      src: "/images/Dell laptop-1.webp",
+      src: "/images/dell-laptop-1.webp",
       alt: "Dell refurbished laptop",
     },
     {
-      src: "/images/HP Laptop-1.webp",
+      src: "/images/hp-laptop-1.webp",
       alt: "HP refurbished laptop",
     },
   ];
@@ -210,7 +210,7 @@ export default async function Home() {
             </div>
             <ImageCompareSlider
               beforeSrc="/images/1-final.png"
-              afterSrc="/images/2- final.png"
+              afterSrc="/images/2-final.png"
               beforeAlt="Laptop before refurbishment"
               afterAlt="Laptop after refurbishment"
             />
