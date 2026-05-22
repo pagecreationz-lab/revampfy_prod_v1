@@ -1,0 +1,42 @@
+{
+  "vendors": [
+    {
+      "id": "vendor_7kfil2kt",
+      "name": "Revamp",
+      "code": "revamp",
+      "email": "pagecreationz@gmail.com",
+      "passwordHash": "",
+      "states": [
+        "TamilNandu"
+      ],
+      "isActive": true,
+      "lastSyncAt": "2026-05-01T17:44:00.108Z"
+    },
+    {
+      "id": "vendor_k7txc770",
+      "name": "Praveen",
+      "code": "pra244",
+      "email": "praveen@gmail.com",
+      "passwordHash": "ff96673205dc722320598ebf8f88325b2ac56922d5a2164b5765868274bc0d73",
+      "states": [
+        "Delhi"
+      ],
+      "isActive": true,
+      "lastSyncAt": "2026-05-01T17:36:31.701Z"
+    }
+  ],
+  "stores": [
+    {
+      "id": "store_6t14fszl",
+      "vendorId": "vendor_7kfil2kt",
+      "state": "Tamil Nadu",
+      "city": "Chennai",
+      "storeName": "Revamp",
+      "address": "Sithalapakkam",
+      "phone": "76567667",
+      "pincode": "600126",
+      "isActive": true
+    }
+  ],
+  "updatedAt": "2026-05-01T17:44:00.108Z"
+}
