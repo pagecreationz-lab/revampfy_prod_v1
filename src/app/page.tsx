@@ -89,7 +89,7 @@ export default async function Home() {
                 <div className="sample-product-card__media">
                   <span className="sample-product-card__badge">Refurbished</span>
                   <img
-                    src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200&auto=format&fit=crop"
+                    src="images/Apple MacBook Air M1- updated.jpg"
                     alt="Apple MacBook Air M1"
                   />
                 </div>
