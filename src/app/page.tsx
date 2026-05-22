@@ -89,7 +89,7 @@ export default async function Home() {
                 <div className="sample-product-card__media">
                   <span className="sample-product-card__badge">Refurbished</span>
                   <img
-                    src="/images/Apple MacBook Air M1.webp"
+                    src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200&auto=format&fit=crop"
                     alt="Apple MacBook Air M1"
                   />
                 </div>
@@ -104,7 +104,7 @@ export default async function Home() {
                 <div className="sample-product-card__media">
                   <span className="sample-product-card__badge">Refurbished</span>
                   <img
-                    src="/images/HP all in one pc.webp"
+                    src="/images/hp-all-in-one-pc.webp"
                     alt="HP EliteDesk 800 G3"
                   />
                 </div>
@@ -119,7 +119,7 @@ export default async function Home() {
                 <div className="sample-product-card__media">
                   <span className="sample-product-card__badge">Refurbished</span>
                   <img
-                    src="/images/Lenovo thinkpad.webp"
+                    src="/images/lenovo-thinkpad.webp"
                     alt="Lenovo ThinkPad T480"
                   />
                 </div>
