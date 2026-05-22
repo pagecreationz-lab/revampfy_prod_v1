@@ -896,6 +896,9 @@ body.theme-dark .hero .hero__shop-btn {
   top: 8px;
   left: 8px;
   z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.2rem 0.5rem;
   border-radius: 999px;
   font-size: 0.66rem;
@@ -903,8 +906,8 @@ body.theme-dark .hero .hero__shop-btn {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #e7fff1 !important;
-  background: rgba(8, 117, 64, 0.86);
-  border: 1px solid rgba(134, 239, 172, 0.75);
+  background: rgba(8, 117, 64, 0.92) !important;
+  border: 1px solid rgba(134, 239, 172, 0.85) !important;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.28);
 }
 
